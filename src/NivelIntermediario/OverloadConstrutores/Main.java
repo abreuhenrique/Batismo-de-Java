@@ -22,5 +22,17 @@ public class Main {
         // Metodo Sobrecarregado
         itachi.inteligenciaDeCombate(170);
 
+        //FINAL METHODS: Não pode ser Sobreescrito em uma SubClasse
+        System.out.println("==================================");
+        itachi.tacarKunai();
+
+        //ATRIBUTO FINAL:
+        System.out.println("É um Ninja: " + itachi.ninja);
+
+        //Final Classes
+        System.out.println("===================================");
+        Anbu ninjaAnbu001 = new Anbu();
+        ninjaAnbu001.nome = "Shisui Uchiha";
+        ninjaAnbu001.anbu();
     }
 }

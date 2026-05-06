@@ -1,7 +1,5 @@
 package NivelIntermediario.Desafio05;
 
-import NivelIntermediario.OverloadConstrutores.BancoKonoha;
-
 public class Main {
     static void main(String[] args) {
         //Instanciando um Objeto da Classe Banco

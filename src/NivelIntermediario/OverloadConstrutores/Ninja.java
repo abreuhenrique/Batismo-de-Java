@@ -9,6 +9,8 @@ public abstract class Ninja implements EstrategiaDeBatalha{
     int idade;
     int numeroDeMissoesConcluidas;
     NivelNinja rank;
+    //Atributo Final
+    final boolean ninja = true;
 
     public Ninja() {
     }
@@ -17,6 +19,11 @@ public abstract class Ninja implements EstrategiaDeBatalha{
         this.nome = nome;
         this.aldeia = aldeia;
         this.idade = idade;
+    }
+
+    //Final Methods
+    final void tacarKunai() {
+        System.out.println("EU SOU UM METODO DA CLASSE MÃE");
     }
 
     //TODO: Sobrecarregar o Construtor com os Novos Atributos

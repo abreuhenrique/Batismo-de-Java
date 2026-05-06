@@ -2,7 +2,7 @@ package NivelIntermediario.OverloadConstrutores;
 
 public class Uzumaki extends Ninja {
 
-    public Uzumaki() {
+   public Uzumaki() {
     }
 
     public Uzumaki(String nome, String aldeia, int idade) {

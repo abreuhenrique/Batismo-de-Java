@@ -15,6 +15,13 @@ public class Uchiha extends Ninja {
         super(nome, aldeia, idade, numeroDeMissoes, rank);
     }
 
+    //FINAL METHODS
+    /*
+    * public void tacarKunai() {
+        System.out.println("");
+    }
+    * */
+
     @Override
     public void habilidadeEspecial() {
         System.out.println("Esse é o meu Ataque Uchiha, um JUTSU BOLA DE FOGO!");
