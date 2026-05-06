@@ -26,6 +26,7 @@ O projeto está dividido em pacotes de acordo com o nível de complexidade e os 
 * **@Override**
 * **Referencia de Memoria x Valor em memoria**
 * **Desafio: Criar um Banco de Konoha -** Banco com Conta Corrente e Poupança que permite fazer depositos e tranferncias entre diferentes contas cadastradas no Banco.
+* **Classes, Metodos e Atributos Final**
 
 ## 🛠️ Tecnologias e Ferramentas Utilizadas
 * **Linguagem:** Java
