@@ -1,4 +1,4 @@
-package NivelIntermediario;
+package NivelIntermediario.MetodosEAtributos;
 
 public class Main {
     static void main(String[] args) {
@@ -18,35 +18,29 @@ public class Main {
         * */
 
         //Objeto 1
-        Uzumaki Naruto = new Uzumaki();
+        Ninja Naruto = new Ninja();
         Naruto.nome = "Naruto Uzumaki";
         Naruto.aldeia = "Konoha";
         Naruto.idade = 17;
 
+        int quantoTempo = Naruto.TempoParaSerHokage(60);
+        System.out.println("Você possui " + Naruto.idade + " anos faltam " + quantoTempo + " anos para se Tornar um Hokage");
+
         //Objeto 2
-        Uchiha Sasuke = new Uchiha();
+        Ninja Sasuke = new Ninja();
         Sasuke.nome = "Sasuke Uchiha";
         Sasuke.aldeia = "Konoha";
         Sasuke.idade = 18;
 
+        //Atribuindo Metodos aos Objetos
+        Sasuke.AtivarSharingan();
+
         //Objeto 3
-        Haruno Sakura = new Haruno();
+        Ninja Sakura = new Ninja();
         Sakura.nome = "Sakura Haruno";
         Sakura.aldeia = "Konoha";
         Sakura.idade = 18;
-
-        //Objeto 4
-        Hyuga Hinata = new Hyuga();
-        Hinata.nome = "Hinata Hyuga";
-        Hinata.aldeia = "Konoha";
-        Hinata.idade = 17;
-
-        Boruto Boruto = new Boruto();
-        Boruto.nome = "Boruto Hyuga Uzumaki";
-        Boruto.aldeia = "Konoha";
-        Boruto.idade = 12;
-
-        Boruto.AtivarJougan();
-        Boruto.modoSabio();
+        String mostraMetodo = Sakura.BoasVindas();
+        System.out.println(mostraMetodo);
     }
 }

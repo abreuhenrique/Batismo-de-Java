@@ -1,4 +1,4 @@
-package NivelIntermediario.Desafio03;
+package NivelIntermediario.Desafio01;
 
 public class Uchiha extends Ninja{
 
@@ -12,4 +12,5 @@ public class Uchiha extends Ninja{
         System.out.println("Status: " + statusMissao);
         System.out.println("Habilidade Especial: " + habilidadeEspecial);
     }
+
 }
