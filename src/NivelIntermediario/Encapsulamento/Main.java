@@ -15,5 +15,12 @@ public class Main {
         sasuke.setNome("Sasuke Uchiha");
         System.out.println("Nome Alterado: " + sasuke.getNome());
 
+        System.out.println("-------------------- Missões --------------------");
+        Missoes missao001 = new Missoes("Resgatar Camponeses", RankDeMissoes.B);
+        missao001.exibirDetalhes();
+        System.out.println("");
+        Missoes missao002 = new Missoes("Derrotar Zabuza", RankDeMissoes.S);
+        missao002.exibirDetalhes();
+
     }
 }
