@@ -29,6 +29,7 @@ O projeto está dividido em pacotes de acordo com o nível de complexidade e os 
 * **Classes, Metodos e Atributos Final**
 * **Encapsulamento:** Getters e Setters
 * **ENUMS**
+* **Lists**
 
 ## 🛠️ Tecnologias e Ferramentas Utilizadas
 * **Linguagem:** Java
