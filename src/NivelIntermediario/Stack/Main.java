@@ -1,8 +1,6 @@
 package NivelIntermediario.Stack;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Stack;
+import java.util.*;
 
 public class Main {
     static void main(String[] args) {
@@ -32,5 +30,37 @@ public class Main {
         System.out.println("A Stack está vazia? " + nomesNinja.isEmpty());
         System.out.println("Tamanho da Stack: " + nomesNinja.size());
 
+        //QUEUE
+        //First In First Out - FIFO
+        System.out.println("-------------------- QUEUE --------------------");
+        Queue<String> ninjasQueue = new LinkedList<>();
+        ninjasQueue.add("Naruto Uzumaki");
+        ninjasQueue.add("Sasuke Uchiha");
+        ninjasQueue.add("Sakura Haruno");
+        ninjasQueue.add("Hinata Hyuga");
+        ninjasQueue.add("Kakashi Hatake");
+
+        if(ninjasQueue.isEmpty()) {
+            return;
+        } else {
+            System.out.println(ninjasQueue);
+        }
+
+        //Removendo Primeiro da Fila
+        System.out.println("Primeiro da Fila: " + ninjasQueue.poll());
+        System.out.println("Queue Atual: " + ninjasQueue);
+        System.out.println("HEAD: " + ninjasQueue.peek());
+        System.out.println("Queue Atual: " + ninjasQueue);
+
+        ninjasQueue.offer("Hashirama");
+        System.out.println(ninjasQueue);
+
+        ninjasQueue.poll();
+        ninjasQueue.poll();
+        ninjasQueue.poll();
+        ninjasQueue.poll();
+        ninjasQueue.poll();
+
+        System.out.println(ninjasQueue);
     }
 }
