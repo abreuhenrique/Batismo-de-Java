@@ -17,14 +17,13 @@ public class Main {
         list.addNinja("Kisame Hoshigaki", "Névoa", 29);
 
         int opcao = 0;
-        while(opcao != 6) {
+        while(opcao != 5) {
             System.out.println("---------------MENU---------------");
             System.out.println("1. Adicionar Um Ninja");
             System.out.println("2. Remover Um Ninja");
             System.out.println("3. Consultar Um Ninja");
             System.out.println("4. Visualizar A Lista");
-            System.out.println("5. Ordenar A Lista");
-            System.out.println("6. Sair");
+            System.out.println("5. Sair");
             System.out.print("Opção: ");
             opcao = scanner.nextInt();
             scanner.nextLine();
@@ -40,6 +39,71 @@ public class Main {
                     scanner.nextLine();
 
                     list.addNinja(nome, aldeia, idade);
+                    break;
+                case 2:
+                    System.out.println("Buscar Por:");
+                    System.out.println("1.Index");
+                    System.out.println("2.Nome");
+                    System.out.print("Opção: ");
+                    int op = scanner.nextInt();
+                    scanner.nextLine();
+                    if (op == 1) {
+                        System.out.print("Index do Ninja: ");
+                        int index = scanner.nextInt();
+                        scanner.nextLine();
+
+                        list.removeNinjaIndex(index);
+                        System.out.println("Ninja Removido!");
+                    } else if (op == 2) {
+                        System.out.println("Nome do Ninja: ");
+                        String nomeNinja = scanner.nextLine();
+
+                        list.removeNinjaName(nomeNinja);
+                        System.out.println("Ninja Removido!");
+                    }
+                    break;
+                case 3:
+                    System.out.println("Buscar Por:");
+                    System.out.println("1. Nome");
+                    System.out.println("2. Index");
+                    System.out.println("3. Aldeia");
+                    System.out.println("4. Idade");
+                    System.out.print("Opção: ");
+                    op = scanner.nextInt();
+                    scanner.nextLine();
+
+                    switch (op) {
+                        case 1:
+                            System.out.println("Nome do Ninja: ");
+                            String nomeNinja = scanner.nextLine();
+
+                            break;
+                        case 2:
+                            System.out.print("Index do Ninja: ");
+                            int index = scanner.nextInt();
+                            scanner.nextLine();
+
+                            list.mostrarNinjaIndex(index);
+                            break;
+                        case 3:
+                            System.out.println("Aldeia do Ninja: ");
+                            String aldeiaDoNinja = scanner.nextLine();
+
+                            break;
+                        case 4:
+                            System.out.print("Idade do Ninja: ");
+                            int idadeDoNinja = scanner.nextInt();
+                            scanner.nextLine();
+
+                    }
+                    break;
+                case 4:
+                    System.out.println("---------------Lista de Ninjas---------------");
+                    list.mostraLista();
+                    break;
+
+                case 5:
+                    System.out.println("Saindo...");
                     break;
             }
         }
