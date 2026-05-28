@@ -1,4 +1,4 @@
 package NivelAvancado.BigO;
 
-public class Main {
+public class Ninja {
 }
