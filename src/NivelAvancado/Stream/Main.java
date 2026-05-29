@@ -1,6 +1,7 @@
 package NivelAvancado.Stream;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 
 public class Main {
     static void main(String[] args) {
@@ -18,5 +19,13 @@ public class Main {
         /*ninjas.stream()
                 .sorted((n1, n2) -> Integer.compare(n1.getIdade(), n2.getIdade()))
                 .forEach(System.out::println);*/
+
+        /*ninjas.stream()
+                .sorted((n1, n2) -> CharSequence.compare(n1.getNome(), n2.getNome()))
+                .forEach(System.out::println);*/
+
+        ninjas.stream()
+                .sorted((Comparator.comparing(Ninja::getNome).reversed()))
+                .forEach(System.out::println);
     }
 }
