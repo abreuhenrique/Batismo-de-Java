@@ -1,4 +1,4 @@
-package NivelAvancado.BigO;
+package NivelAvancado.AnaliseComplexidade;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
